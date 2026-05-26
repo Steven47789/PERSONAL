@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antony Romero | Matemática Aplicada</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+  </div>
+
+  <!-- CANVAS -->
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      Antony<span>_</span>
+    </div>
+    <nav>
+      <a href="#manifesto">Perfil</a>
+      <a href="#exploration">Servicios</a>
+      <a href="#now">Explorando</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        Antony Romero · Matemático Aplicado
+      </div>
+      <h1 class="hero-title">
+        <span id="typewriter"></span>
+      </h1>
+      <p class="hero-description">
+        Clases particulares de matemática · Automatización de tareas con Python · Documentación profesional en LaTeX.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/51967242419" target="_blank" class="social-icon rotating-border">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/Steven47789" target="_blank" class="social-icon rotating-border">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/antony-romero-643471346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon rotating-border">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#projects" class="btn-outline glowing-border">
+          Ver proyectos
+        </a>
+      </div>
+    </div>
+    <div class="hero-panel" id="hero-panel">
+      <pre>
+const profile = {
+  mathematics: true,
+  automation: true,
+  interfaces: true,
+  latex: true,
+  systems: true,
+  ai: true
+}
+</pre>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="manifesto">
+    <div class="section-label">
+      PERFIL PROFESIONAL
+    </div>
+    <div class="manifesto-grid">
+      <div class="manifesto-text">
+        <h2>
+          Convierto problemas matemáticos en soluciones digitales.
+        </h2>
+        <p>
+          Uso programación para automatizar procesos, crear documentación técnica y desarrollar interfaces funcionales.
+        </p>
+        <p>
+          Mi enfoque combina lógica analítica, estructura visual y resultados medibles.
+        </p>
+        <p>
+          Ofrezco clases particulares de matemática, automatización con Python y documentos profesionales en LaTeX.
+        </p>
+      </div>
+      <div class="manifesto-side">
+        <div class="floating-box">
+          <span>Python</span>
+        </div>
+        <div class="floating-box">
+          <span>LaTeX</span>
+        </div>
+        <div class="floating-box">
+          <span>Excel</span>
+        </div>
+        <div class="floating-box">
+          <span>IA</span>
+        </div>
+        <div class="floating-box">
+          <span>Dashboards</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORATION -->
+  <section class="exploration" id="exploration">
+    <div class="section-label">
+      SERVICIOS
+    </div>
+    <div class="exploration-layout">
+      <div class="exploration-item">
+        <div class="number">01</div>
+        <h3>Clases de matemática</h3>
+        <p>
+          Acompañamiento personalizado para estudiantes. Resolución de ejercicios, preparación para exámenes y refuerzo en temas específicos.
+        </p>
+        <div class="academic-levels">
+          <div class="level">
+            <h4>Para colegio / Reforzamiento escolar</h4>
+            <div class="course-tags">
+              <div class="floating-box">Aritmética</div>
+              <div class="floating-box">Álgebra</div>
+              <div class="floating-box">Estadística</div>
+              <div class="floating-box">Geometría</div>
+            </div>
+          </div>
+          <div class="level">
+            <h4>Nivel preuniversitario</h4>
+            <div class="course-tags">
+              <div class="floating-box">Álgebra</div>
+              <div class="floating-box">Estadística</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exploration-item">
+        <div class="number">02</div>
+        <h3>Automatización</h3>
+        <p>
+          Desarrollo de scripts en Python para tareas repetitivas: limpieza de datos, generación de reportes y organización de archivos.
+        </p>
+        <div class="course-tags">
+          <div class="floating-box">Python</div>
+          <div class="floating-box">Excel</div>
+          <div class="floating-box">Overleaf</div>
+        </div>
+      </div>
+      <div class="exploration-item">
+        <div class="number">03</div>
+        <h3>Documentación LaTeX</h3>
+        <p>
+          Creación de informes académicos, papers y presentaciones con formato profesional y tipografía científica.
+        </p>
+      </div>
+      <div class="exploration-item">
+        <div class="number">04</div>
+        <h3>Interfaces digitales</h3>
+        <p>
+          Diseño y desarrollo de sitios web personales, portafolios y paneles de control con enfoque minimalista.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENTLY -->
+  <section class="now-section" id="now">
+    <div class="section-label">
+      ACTUALMENTE EXPLORANDO
+    </div>
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="terminal-content">
+        <div class="terminal-line">> Automatización</div>
+        <div class="terminal-line">> Desarrollo de interfaces web minimalistas</div>
+        <div class="terminal-line">> Aplicaciones de IA para educación</div>
+        <div class="terminal-line">> Documentación científica con LaTeX</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS - DINÁMICO DESDE GOOGLE SHEETS -->
+  <section class="projects" id="projects">
+    <div class="section-label">
+      PROYECTOS RECIENTES
+    </div>
+    <h2 class="project-title">
+      Trabajos y experimentos que he desarrollado.
+    </h2>
+    <div class="projects-grid" id="projects-grid">
+      <div class="loading-projects">Cargando proyectos...</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-box">
+      <div class="section-label">
+        CONTACTO
+      </div>
+      <h2>
+        ¿Necesitas más información?
+      </h2>
+      <a href="https://wa.me/51967242419" target="_blank" class="btn-primary large-btn">
+        <i class="fab fa-whatsapp"></i>
+        Escríbeme ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-name">Antony Romero — Matemática aplicada · Automatización · LaTeX</p>
+      <p class="footer-email">
+        <i class="far fa-envelope"></i>
+        antonyromero595@gmail.com
+      </p>
+      <p class="footer-copyright">
+        © 2026 Antony Romero. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
